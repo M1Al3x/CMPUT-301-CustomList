@@ -3,6 +3,9 @@ import com.example.simpleparadox.listycity.CustomList;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import android.util.Log;
+
 import java.util.ArrayList;
 
 public class CustomListTest {
