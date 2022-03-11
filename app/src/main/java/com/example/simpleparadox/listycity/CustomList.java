@@ -56,4 +56,7 @@ public class CustomList extends ArrayAdapter<City> {
         return;
     }
 
+    public ArrayList<City> getCities() {
+        return cities;
+    }
 }
