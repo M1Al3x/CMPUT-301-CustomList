@@ -25,6 +25,6 @@ public class CustomListTest {
 
     @Test
     public void hasCity(){
-
+        assertEquals(0,1);
     }
 }
