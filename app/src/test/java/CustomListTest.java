@@ -1,6 +1,8 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
+import android.util.Log;
+
 import com.example.simpleparadox.listycity.City;
 import com.example.simpleparadox.listycity.CustomList;
 
@@ -26,16 +28,10 @@ public class CustomListTest {
 
     @Test
     public void hasCity(){
-        list.addCity(new City("Halifax", "NS"));
         City cityToTest = new City("Halifax", "NS");
-        ArrayList<City> cities = list.getCities();
-        Boolean hasCity = false;
-        for(int i=0;i<cities.size();i++){
-            City city = cities.get(i);
-            if(city == cityToTest){
-                hasCity = true;
-            }
-        }
-        assertNotEquals(hasCity, true);
+        list.addCity(cityToTest);
+        boolean hasCity = list.hasCity(cityToTest);
+        assertEquals(true, hasCity);
     }
+
 }
